@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* INÍCIO CABEÇALHHO */
+
+header {
+    background: rgb(182, 209, 250);
+}
+
+#navegacao ul li a {
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: black;
+    padding: 5px 20px;
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+#navegacao ul li a#sem {
+    border-right: none;
+}
+
+#navegacao ul li a:hover {
+    color: black;
+    background: rgb(231, 241, 255);
+}
+
+#navegacao ul li a:active {
+    background: rgb(127, 153, 190);
+    color: rgb(255, 255, 255);
+}
+
+.ativo {
+    background: rgb(231, 241, 255);
+    cursor:text;
+}
+
+.ativo:active {
+    background: rgb(231, 241, 255);
+    cursor:text;
+}
+
+/* FIM CABEÇALHO */
+
+/* INÍCIO BODY */
+
+#area-logo {
+    margin-top: 120px;
+    text-align: center;
+}
+
+#area-logo img {
+    width: 270px;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+    #area-logo img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    #area-logo img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+    #area-logo img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 320px) {
+    #area-logo img {
+        width: 100px;
+    }
+}
+
+#area-logo h4.display-3 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* FIM BODY */
