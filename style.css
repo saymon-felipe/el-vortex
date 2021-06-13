@@ -61,6 +61,13 @@ header {
 
 /* INÍCIO BODY */
 
+#topo {
+    background: white;
+    color: black;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+
 /* INÍCIO BANNER INICIAL */
 
 figure#area-logo {
@@ -181,7 +188,7 @@ figure#area-logo {
 
 section#conheca {
     margin-top: 23%;
-    background: rgb(182, 209, 250);
+    background: rgb(201, 223, 255);
 }
 
 div.bg-dark {
@@ -193,6 +200,149 @@ div.bg-dark {
     letter-spacing: 3px;
 }
 
+/* 2 PÁGINA DO MENU */
+
+#texto-interno h3.letra {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+}
+
+#texto-interno p {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#background {
+    background: rgba(0, 0, 0, 0.466);
+}
+
+.letra {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+}
+
+.largura-titulo-fieldset {
+    width: 30%;
+}
+
+@media (min-width: 992px) {
+    .campeoes h4 {
+        font-size: 35px;
+    }
+    .campeoes h5 {
+        font-size: 25px;
+    }
+    .animacao img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1159px) {
+    span.letra {
+        font-size: 40px;
+    }
+    .campeoes h4 {
+        font-size: 40px;
+    }
+    .campeoes h5 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    span.letra {
+        font-size: 35px;
+    }
+    .campeoes h4 {
+        font-size: 25px;
+    }
+    .campeoes h5 {
+        font-size: 15px;
+    }
+    .animacao img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    span.letra {
+        font-size: 25px;
+    }
+    .campeoes h4 {
+        font-size: 20px;
+    }
+    .campeoes h5 {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 573px) {
+    .largura-titulo-fieldset {
+        width: 50%;
+    }
+
+    h3.letra {
+        font-size: 35px;
+    }
+
+    .campeoes h4 {
+        font-size: 15px;
+    }
+    .campeoes h5 {
+        font-size: 10px;
+    }
+    
+}
+
+@media (max-width: 485px) {
+    .letra {
+        font-size: 20px;
+    }
+    .campeoes h4 {
+        font-size: 12px;
+    }
+    .campeoes h5 {
+        font-size: 7px;
+    }
+    .animacao img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 360px) {
+    .letra {
+        font-size: 15px;
+    }
+
+    span.letra {
+        font-size: 15px;
+    }
+    
+}
+
+a.animacao {
+    text-decoration: none;
+}
+
+.animacao:hover {
+    animation-name: animacao;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: 1s;
+}
+
+@keyframes animacao {
+    0% {
+       background: rgba(0, 0, 0, 0); 
+    }
+    100% {
+        background: black;
+    }
+}
+
 /* FIM SOBRE A EVX */
 
 /* FIM BODY */
@@ -200,7 +350,7 @@ div.bg-dark {
 /* COMEÇO RODAPÉ */
 
 #rodape {
-    background: rgb(182, 209, 250);
+    background: rgb(201, 223, 255);
 }
 
 #rodape a {
