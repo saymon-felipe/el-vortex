@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    outline: none;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -8,10 +10,17 @@ html, body {
     overflow-x: hidden;
 }
 
+body {
+    background: url(imagens/frame.jpg) no-repeat center center;
+    background-size: cover;
+    padding-top: 100px;
+    backdrop-filter: blur(5px);
+}
+
 /* INÍCIO CABEÇALHHO */
 
 header {
-    background: rgb(182, 209, 250);
+    background: rgb(201, 223, 255);
 }
 
 #navegacao ul li a {
@@ -52,25 +61,80 @@ header {
 
 /* INÍCIO BODY */
 
-#area-logo {
-    margin-top: 120px;
-    text-align: center;
+/* INÍCIO BANNER INICIAL */
+
+figure#area-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#area-logo img, #area-logo video {
+    position: absolute;
+}
+
+#area-logo video {
+    width: 80%;
 }
 
 #area-logo img {
-    width: 270px;
-    margin: 0 auto;
+    width: 500px;
+    border-radius: 0%;
+    z-index: 1;
+    transition: 2s;
+}
+
+#area-logo img:hover {
+    animation-name: passarEmCima;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes passarEmCima {
+    0% {
+        border-radius: 50%;
+        background:rgba(128, 204, 255, 0);
+    }
+    50% {
+        border-radius: 50%;
+        background:rgba(255, 255, 255, 0.527);
+    }
+    100% {
+        border-radius: 50%;
+        background:rgba(255, 255, 255, 0);
+    }
+
 }
 
 @media (max-width: 991px) {
     #area-logo img {
         width: 250px;
     }
+    #conheca .container h1 {
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-size: 50px;
+    }
 }
 
 @media (max-width: 768px) {
     #area-logo img {
-        width: 200px;
+        width: 180px;
+    }
+    #conheca .container h1 {
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 540px) {
+    .container div div {
+        text-align: center!important;
     }
 }
 
@@ -78,17 +142,75 @@ header {
     #area-logo img {
         width: 150px;
     }
+    #navegacao ul li a {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 320px) {
     #area-logo img {
         width: 100px;
     }
+    #conheca .container h1 {
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-size: 30px;
+    } 
+    #rodape h6 {
+        font-size: 10px;
+    }
+    #rodape h5 {
+        font-size: 15px;
+    }
 }
 
-#area-logo h4.display-3 {
-    font-weight: 600;
-    text-transform: uppercase;
+@media (max-width: 250px) {
+    #area-logo img {
+        width: 70px;
+    }
+    #conheca .container h1 {
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
 }
+
+/* FIM BANNER INICIAL */
+
+/* INÍCIO SOBRE A EVX */
+
+section#conheca {
+    margin-top: 23%;
+    background: rgb(182, 209, 250);
+}
+
+div.bg-dark {
+    background: rgba(0, 0, 0, 0.445)!important;
+}
+
+#conheca .container h1 {
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+/* FIM SOBRE A EVX */
 
 /* FIM BODY */
+
+/* COMEÇO RODAPÉ */
+
+#rodape {
+    background: rgb(182, 209, 250);
+}
+
+#rodape a {
+    color: black;
+}
+
+#rodape i a h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* FIM RODAPÉ */
