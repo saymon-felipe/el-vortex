@@ -13,7 +13,7 @@ html, body {
 body {
     background: url(imagens/frame.jpg) no-repeat center center;
     background-size: cover;
-    padding-top: 100px;
+    padding-top: 90px;
     backdrop-filter: blur(5px);
 }
 
@@ -21,6 +21,16 @@ body {
 
 header {
     background: rgb(201, 223, 255);
+}
+
+a.navbar-brand img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+a.navbar-brand img:hover {
+    border: 5px solid rgba(255, 255, 255, 0.507); 
+    background: rgba(255, 255, 255, 0.507);
 }
 
 #navegacao ul li a {
@@ -143,6 +153,9 @@ figure#area-logo {
     .container div div {
         text-align: center!important;
     }
+    a.navbar-brand img {
+        width: 60px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -180,15 +193,41 @@ figure#area-logo {
         letter-spacing: 3px;
         font-size: 20px;
     }
+    a.navbar-brand img {
+        width: 30px;
+    }
 }
 
 /* FIM BANNER INICIAL */
 
 /* INÍCIO SOBRE A EVX */
 
-section#conheca {
+div#banners {
+    transition: 0.3s;
+}
+
+
+div#banners:hover {
+    border: 10px solid rgb(0, 0, 0);
+}
+
+section#conheca div.container h1 {
+    transition: 0.1s;
+}
+
+section#conheca div.container h1:hover {
+    color: white;
+    background: black;
+}
+
+section#conheca-nos {
     margin-top: 23%;
-    background: rgb(201, 223, 255);
+    background: rgba(0, 0, 0, 0.445);
+    color: white;
+}
+
+section#conheca-nos div.container h1 {
+    font-weight: 500;
 }
 
 div.bg-dark {
@@ -344,6 +383,32 @@ a.animacao {
 }
 
 /* FIM SOBRE A EVX */
+
+/* INÍCIO CONTATO */
+
+section#contato div.container {
+    background: rgba(0, 0, 0, 0.445);
+    color: white;
+}
+
+a#facebook {
+    color: white;
+}
+
+a#facebook:hover {
+    color: #0676E8;
+}
+
+a#discord {
+    color: white;
+}
+
+a#discord:hover {
+    color: #5865F2;
+}
+
+
+/* FIM CONTATO */
 
 /* FIM BODY */
 

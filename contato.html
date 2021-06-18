@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/logo-colorida.png">
+    <script src="https://kit.fontawesome.com/b6e669c4e3.js" crossorigin="anonymous"></script>
+    <title>El-Vortex - Home</title>
+</head>
+<body>
+    <header id="cabecalho" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-light" id="nav">
+                <a href="index.html" class="navbar-brand">
+                    <img src="imagens/logo-preto.png" alt="">
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+
+                <div class="collapse navbar-collapse text-right" id="navegacao">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="el-vortex.html">A EVX</a></li>
+                        <li class="nav-item"><a class="nav-link ativo" id="sem" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contato">
+        <div class="container my-5 p-5 text-center">
+            <div class="my-5">
+                <h3 class="mb-4"><span class="letra">Entre em contato conosco!</span></h3>
+                <a href="https://api.whatsapp.com/send?phone=43996352536" target="_blank">
+                    <button id="whatsapp" class="btn btn-success btn-lg">
+                        <i class="fab fa-whatsapp fa-lg"></i>
+                        WhatsApp
+                    </button>
+                </a>
+            </div>
+            <div class="my-5">
+                <h3 class="mb-4"><span class="letra">Redes sociais</span></h3>
+                <div class="w-25 mx-auto d-flex flex-wrap justify-content-around">
+                    <a class="m-3" href="https://www.facebook.com/profile.php?id=100069392029704" id="facebook" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+                    <a class="m-3" href="https://discord.gg/x7k8qAb4" id="discord" target="_blank"><i class="fab fa-discord fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="rodape" class="py-2">
+        <div class="container">
+            <div class="d-flex justify-content-between py-2 flex-wrap">
+                <div class="mx-auto my-4">
+                    <h5><strong>Time Principal</strong></h5>
+                    <a href="evx-7-panca.html"><h6>EVX 7Pança</h6></a>
+                    <a href="evx-lord.html"><h6>EVX Lord</h6></a>
+                    <a href="evx-rabudinha.html"><h6>EVX Rabudinha</h6></a>
+                    <a href="evx-tamararidgewell.html"><h6>EVX TamaraRidgewell</h6></a>
+                    <a href="evx-threshhook.html"><h6>EVX ThreshHook</h6></a>
+                </div>
+                <div class="mx-auto text-center my-4">
+                    <h5><strong>Servidor do Discord</strong></h5>
+                    <i class="fab fa-discord fa-2x py-2 d-flex justify-content-center"><a href="https://discord.gg/qXcVykPS" target="_blank"><h6 class="ml-2">El-Vortex</h6></a></i>
+                </div>
+                <div class="mx-auto text-right my-4">
+                    <h5><strong>Mais Informações</strong></h5>
+                    <a href="atualizacoes.html"><h6>Atualizações</h6></a>
+                    <a href="integrantes.html"><h6>Time Completo</h6></a>
+                    <a href="contato.html"><h6>Contato</h6></a>
+                </div>
+            </div>
+            <div class="text-center py-5">
+                <h6>&copy; 2021 - EVX El-Vortex, By Rabsystems</h6>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!--SCRIPTS-->
+    <div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!--LINK SCRIPT-->
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
